@@ -1,5 +1,7 @@
-import React from 'react'
-
+import React from 'react';
+import catHeader from './img/catHeader.png';
+import userFeedback from './img/userFeedback.png'
+import catFeedback from './img/catFeedback.png'
 function App() {
 
   return (
@@ -32,7 +34,8 @@ function App() {
       <button className="download-button btn btn-outline-light btn-lg"><i className="fa-brands fa-google-play"></i>Download</button>
     </div>
      <figure className="col-lg-6">
-        <img className="imgGato" src="img/catHeader.png" alt="Cat on Header"/>
+        <img className="imgGato" src={catHeader} alt="Cat on Header"/>
+        <img src='../../'></img>
      </figure>
     </div>
  </div>
@@ -65,12 +68,12 @@ function App() {
    <div className="carousel-inner">
     <div className="carousel-item active">
       <h3>Very good, the system is awesome to find a cat.</h3>
-        <img className="imgCliente" src='img/userFeedback.png' alt="User feedback"/>
+        <img className="imgCliente" src={userFeedback} alt="User feedback"/>
         <em>Rio de Janeiro, Brazil</em>
     </div>
     <div className="carousel-item">
       <h3>The humans in this app loves me!</h3>
-        <img className="imgCliente" src="img/catFeedback.png" alt="Cat feedback"/>
+        <img className="imgCliente" src={catFeedback} alt="Cat feedback"/>
         <em>Rio de Janeiro, Brazil</em>
     </div>
   </div>
